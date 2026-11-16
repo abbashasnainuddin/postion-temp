@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f2f2f2;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: #636363;
+    color: white;
+    text-align: center;
+    padding: 18px 0 14px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+header h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 13px;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    align-items: flex-start;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+    background: #6f6f6f;
+    color: white;
+    width: 180px;
+    height: 520px;
+    padding: 15px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 90px;
+}
+.sidebar h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 6px 0;
+    opacity: 0.85;
+}
+
+/* ===== MAIN CONTENT ===== */
+.main {
+    flex: 1;
+    background: white;
+    position: relative;
+    padding: 15px 15px 25px 15px;
+    border-radius: 8px;
+    min-height: 850px;
+    overflow: hidden;
+}
+
+/* STICKY BOX - Video jaisa upar chipkega */
+.sticky-box {
+    background: #d9d9d9;
+    text-align: center;
+    padding: 8px 0;
+    position: sticky;
+    top: 85px; /* Header ke neeche chipkega */
+    z-index: 20;
+}
+.sticky-box p {
+    font-size: 11px;
+    color: #555;
+}
+
+/* BOX 1 - Orange Aadha Gol */
+.box1 {
+    background: #e25c34;
+    color: white;
+    width: 130px;
+    height: 115px;
+    border-radius: 50px 50px;
+    text-align: center;
+    padding-top: 18px;
+    font-size: 13px;
+    font-weight: bold;
+    position: absolute;
+    top: 60px;
+    right: -5px;
+    z-index: 10;
+}
+
+/* BOX 2 - Blue */
+.box2 {
+    background: #a9cfe0;
+    width: 260px;
+    padding: 18px;
+    border-radius: 8px;
+    position: absolute;
+    top: 180px;
+    left: 50px;
+    z-index: 1;
+}
+.box2 b {
+    font-size: 13px;
+}
+.box2 p {
+    font-size: 11px;
+    line-height: 1.4;
+    margin-top: 3px;
+}
+
+/* 6 BOXES - BILKUL VIDEO JAISA */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 upar, 3 neeche */
+    gap: 18px;
+    margin-top: 350px; /* Box 2 ke neeche wali jagah */
+}
+.img-box {
+    background: #d6d6d6;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #aaa;
+    font-size: 24px;
+    border-radius: 8px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #636363;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 12px;
+}
+
+/* ===== RIGHT FIXED T F I ===== */
+.fixed-btns {
+    position: fixed;
+    right: 12px;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    z-index: 200;
+}
+.fixed-btns span {
+    background: #6f6f6f;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    cursor: pointer;
+}
